@@ -1,7 +1,14 @@
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
-import { theme } from "./theme";
+import { HeaderSimple } from "./components/Header/HeaderSimple.tsx";
+import { TimelineTree} from "./components/Timeline/TimelineTree.tsx"
 
 export default function App() {
-  return <MantineProvider theme={theme}>App</MantineProvider>;
+  return(
+    <MantineProvider >
+      <HeaderSimple />
+      <TimelineTree />
+      
+    </MantineProvider>
+  )
 }
